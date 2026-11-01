@@ -112,8 +112,8 @@ class TestSimplilearn:
                 WebDriverWait(self.driver, 10).until(EC.url_contains("user/login"))
 
             with allure.step("Enter credentials and submit"):
-                self.driver.find_element(By.XPATH, '//*[@id="login-form"]/div[2]/input').send_keys("sewminihw@gmail.com")
-                self.driver.find_element(By.XPATH, '//*[@id="password"]').send_keys("SQA#%234ab")
+                self.driver.find_element(By.XPATH, '//*[@id="login-form"]/div[2]/input').send_keys("")
+                self.driver.find_element(By.XPATH, '//*[@id="password"]').send_keys("")
                 self.driver.find_element(By.XPATH, '//*[@id="login-form"]/div[5]/input').click()
 
             with allure.step("Wait for dashboard"):
